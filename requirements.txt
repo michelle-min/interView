@@ -1,0 +1,13 @@
+gensim==3.8.3
+huggingface-hub==0.0.12
+nltk==3.6.1
+numpy==1.21.0
+pandas
+readtime==1.1.1
+streamlit==0.84.2
+spacy==3.1.1
+textstat==0.7.1
+tokenizers==0.10.3
+torch==1.9.0
+transformers==4.8.2
+myprosody==20
