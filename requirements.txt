@@ -42,11 +42,9 @@ google-auth-oauthlib==0.4.5
 google-crc32c==1.1.2
 google-pasta==0.2.0
 googletrans==3.0.0
-grpcio @ file:///var/folders/fz/7j9gd5gn7l935nxd8jr2tcgh0000gp/T/tmp.QnxgqtaE/tensorflow_macos/arm64/grpcio-1.33.2-cp38-cp38-macosx_11_0_arm64.whl
 gTTS==2.2.3
 h11==0.9.0
 h2==3.2.0
-h5py @ file:///var/folders/fz/7j9gd5gn7l935nxd8jr2tcgh0000gp/T/tmp.QnxgqtaE/tensorflow_macos/arm64/h5py-2.10.0-cp38-cp38-macosx_11_0_arm64.whl
 hpack==3.0.0
 hstspreload==2021.8.1
 httpcore==0.9.1
