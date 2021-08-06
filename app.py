@@ -37,7 +37,6 @@ import myprosody
 import pickle
 
 nltk.download('punkt')
-nltk.download('stopwords')
 nlp = spacy.load('en_core_web_sm')
 
 ########
@@ -72,7 +71,8 @@ def add_intro():
     st.markdown('Learning happens best when content is personalized to meet our needs and strengths. For this reason I created :robot_face: InterView, the AI system to coach you through mock interviews for internships. This site is only a demo of several functionalities.')
     #You can find me on [LinkedIn] (https://www.linkedin.com/in/michellemin-1/) and [GitHub] (https://github.com/michelleymin).
     st.markdown('👈 **Select an option from the sidebar to get started.**')
-    st.markdown('*What to expect.* Learn about common interview questions')
+    st.markdown('*Why internships.* Read about the importance of internships')
+    st.markdown('*What to expect.* Learn how to answer common interview questions')
     st.markdown('*Record an interview.* Upload your question response audio')
     st.markdown('*Generate feedback.* Get immediate feedback')
     st.markdown('*Make some changes.* Figure out your next steps')
