@@ -240,7 +240,6 @@ def calc_vocab(text_file):
 # Mood of text file
 def calc_mood_all(text_file):
     # Sentiment analysis
-    st.markdown('## Sentiment analysis')
     sia = SentimentIntensityAnalyzer()
     t = sia.polarity_scores(text_file)
 
@@ -263,13 +262,10 @@ def calc_mood_all(text_file):
         st.write(t['neu'])
         st.write(t['neg'])
 
-    # Expander
-    st.text("")
-    with st.beta_expander('Why does this matter?'):
-        st.write('People who say mostly positive emotion words are rated as performing better in interviews than those who say mostly negative emotion words.')
-
 def calc_mood_sent(text_file):
-    st.text("")
+    # st.text("")
+
+    st.markdown('## Sentiment analysis')
 
     # Sentiment across each sentence in the text
     sents = word_tokenize(text_file)
@@ -282,6 +278,12 @@ def calc_mood_sent(text_file):
 
     #Plotting sentiment scores per sentencein line graph
     st.line_chart(sentScores) #using line_chart st call to plot polarity for each sentenc
+
+    # Expander
+    st.text("")
+    with st.beta_expander('Why does this matter?'):
+        st.write('People who say mostly positive emotion words are rated as performing better in interviews than those who say mostly negative emotion words.')
+
 
 
 ########
