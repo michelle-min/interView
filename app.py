@@ -97,7 +97,7 @@ def add_questions():
 # Add text for the why internships page
 def add_internships():
     st.markdown('# Why internships?')
-    st.markdown('What you learn in school may not always feel relevant to what you\'ll do after you graduate. In fact, research shows that many colleges and universities don\'t prioritize teaching their students the skills that employers want. Work-based learning is a way to brdige that gap.')
+    st.markdown('What you learn in school may not always feel relevant to what you\'ll do after you graduate. In fact, research shows that many colleges and universities don\'t prioritize teaching their students the skills that employers want. Work-based learning is a way to bridge that gap.')
     st.markdown('Internships allow you to get hands-on practice for important skills like problem solving and teamwork. They also help you get more job offers with a higher starting salary after graduating and connect you with mentors who can give you job-search advice. They even give you more information to decide on your major and classes while you\'re in school.')
 
 ########
