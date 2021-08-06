@@ -51,9 +51,11 @@ def main():
     st.markdown('___')
     st.sidebar.title("Make an impression with InterView")
     app_mode = st.sidebar.selectbox("Choose the app mode",
-        ["", "What to expect", "Record an interview", "Generate feedback", "Make some changes"])
+        ["", "Why internships", "What to expect", "Record an interview", "Generate feedback", "Make some changes"])
     if app_mode == "":
         add_intro()
+    elif app_mode == "Why internships":
+        add_internships()
     elif app_mode == "What to expect":
         st.sidebar.success('👆 Record your own answer and get immediate feedback.')
         add_questions()
@@ -64,7 +66,7 @@ def main():
     elif app_mode == "Make some changes":
         run_nextsteps()
 
-# Add intro text for the home/instruction page
+# Add text for the home/instruction page
 def add_intro():
     st.markdown('# InterView Demo')
     st.markdown('Learning happens best when content is personalized to meet our needs and strengths. For this reason I created :robot_face: InterView, the AI system to coach you through mock interviews for internships. This site is only a demo of several functionalities.')
@@ -75,10 +77,10 @@ def add_intro():
     st.markdown('*Generate feedback.* Get immediate feedback')
     st.markdown('*Make some changes.* Figure out your next steps')
 
-# Add intro text for the home/instruction page
+# Add text for the what to expect page
 def add_questions():
     st.markdown('# So you\'re looking for an internship?')
-    st.markdown('We\'ve been there too. Once you start applying, here are common questions that you can expect in an interview. At any point, you can practice it yourself by selecting "Record your interview" in the left sidebar.')
+    st.markdown('Once you start applying, here are common questions that you can expect in an interview. At any point, you can practice it yourself by selecting "Record your interview" in the left sidebar.')
     st.markdown('___')
     st.markdown('## Tell me about yourself.')
     st.markdown('“Tell me about yourself,” or questions like it, are common at the beginning of interviews as they ease both you and the interviewer into the interview. It allows the interviewer to hear a short, summed up version of your background and skills, and it gives them insight into what experience and qualifications you think are most relevant to the position you’re interviewing for.')
@@ -91,6 +93,12 @@ def add_questions():
     st.markdown('Success in a behavioral interview is all about preparation. There aren’t necessarily wrong answers. These questions are aimed at getting to know the real you. The important thing is to be honest and to practice structuring your responses in a way that communicates what you have to offer.')
     st.markdown('You can use the STAR interview method to prepare for behavioral interviews—a technique that helps you structure your response to behavioral interview questions. Using this method, you create a deliberate story arc that your interviewer can easily follow.')
     st.markdown('Text from [indeed] (https://www.indeed.com/career-advice/interviewing/how-to-prepare-for-a-behavioral-interview)')
+
+# Add text for the why internships page
+def add_internships():
+    st.markdown('# Why internships?')
+    st.markdown('What you learn in school may not always feel relevant to what you\'ll do after you graduate. In fact, research shows that many colleges and universities don\'t prioritize teaching their students the skills that employers want. Work-based learning is a way to brdige that gap.')
+    st.markdown('Internships allow you to get hands-on practice for important skills like problem solving and teamwork. They also help you get more job offers with a higher starting salary after graduating and connect you with mentors who can give you job-search advice. They even give you more information to decide on your major and classes while you\'re in school.')
 
 ########
 #ASR
@@ -277,7 +285,7 @@ def calc_mood_sent(text_file):
 
 
 ########
-#MISC
+#NEXT STEPS
 #######
 
 def run_nextsteps():
