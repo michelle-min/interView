@@ -176,7 +176,7 @@ def run_analysis():
             calc_rhythm(st.session_state.audio_file)
         elif model_select == "mood":
             calc_mood_all(st.session_state.text_file)
-            calc_mood_sent(st.session_state.text_file)
+            #calc_mood_sent(st.session_state.text_file)
     else:
         st.error('Please reload your audio file.')
 
